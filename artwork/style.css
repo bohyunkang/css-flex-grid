@@ -1,0 +1,82 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+}
+.select-box {
+  font-family: 'Roboto Mono', monospace;
+  border: 2px solid black;
+  flex-grow: 1;
+}
+.select-box select {
+  font-family: 'Roboto Mono', monospace;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  height: 45px;
+  padding-left: 15px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .boxes {
+  border: 2px solid black;
+  flex-grow: 1;
+  padding: 20px;
+  font-size: 1.1rem;
+  width: 20%
+}
+.main .boxes a {
+  text-decoration: none;
+  color: black;
+}
+.main .boxes .top {
+  margin-bottom: 40px;
+}
+.main .boxes .top::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.main .boxes .img {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+.main .boxes .img > img {
+  width: auto;
+  max-width: 100%;
+}
+.main .boxes .img .img-wrap {
+  display: flex;
+}
+.main .boxes .img .img-wrap img {
+  width: auto;
+  max-width: 50%;
+  padding: 2px;
+}
+.main .boxes .bottom {
+  margin-top: 40px;
+}
+.main .boxes .bottom::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.main .boxes .left {
+  float: left;
+}
+.main .boxes .right {
+  float: right;
+}
+.main .boxes .bottom a  {
+  border-bottom: 2px solid black;
+}

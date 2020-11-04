@@ -1,0 +1,79 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+/* 왼쪽 */
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-weight: 600;
+}
+.left div {
+  padding: 1.0417vw; /* 20px */
+}
+.left div:nth-child(1) {
+  background-color: #0a2f35; 
+  color: #ffffff;
+  font-size: 2.6042vw; /* 50px */
+}
+.left div:nth-child(2) {
+  background-color: #12492f; 
+}
+.left div:nth-child(3) {
+  background-color: #f56038;
+  grid-row: 2 / 4;
+  font-size: 2.0833vw; /* 40px */
+}
+.left div:nth-child(4) {
+  background-color: #ffffff; 
+}
+.left div:nth-child(5) {
+  background-color: #f7a325; 
+  font-size: 2.0833vw; /* 40px */
+}
+.left h3 {
+  display: block;
+}
+.left h3 + h3 {
+  margin-top: 0.5208vw; /* 10px */
+}
+
+/* 오른쪽 */
+.right {
+  display: flex;
+  font-weight: 500;
+}
+.right .speakers {
+  flex-basis: 50%;
+  font-size: 1.5625vw; /* 30px */
+  padding: 1.0417vw; /* 20px */
+}
+.right div span:hover {
+  display: inline-block;
+  background-color: #12492f;
+  color: #ffffff;
+}
+.right .artists {
+  flex-basis: 50%;
+  font-size: 1.5625vw; /* 30px */
+  padding: 1.0417vw; /* 20px */
+}
+.right h4 {
+  margin-bottom: 20px;
+  font-size: 1.0417vw; /* 20px */
+  font-weight: 600;
+}
+.right .list span {
+  display: block;
+}

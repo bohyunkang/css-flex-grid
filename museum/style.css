@@ -1,0 +1,118 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display&family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A385BD;
+}
+
+.wrap {
+  position: relative;
+  width: 98%;
+}
+.franshals-museum {
+  font-family: 'Krona One', sans-serif;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+.frans {
+  position: absolute;
+  top: 4vw;
+  left: 6vw;
+}
+.hals {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-45%, -50%);
+}
+.museum {
+  position: absolute;
+  bottom: 4vw;
+  right: 6vw;
+}
+
+.container {
+  display: grid;
+  height: 95vh;
+  grid-template-columns: minmax(40px, 3.125vw) 5fr 5fr minmax(40px, 3.125vw);
+  grid-template-rows: minmax(40px, 3.125vw) 5fr 5fr minmax(60px, 4.1667vw) minmax(40px, 3.125vw);
+}
+.slogan {
+  background-color: #FCE373;
+  font-weight: 700;
+  font-size: 1.4583vw; /* 28px */
+  line-height: 3.125vw; /* 60px */
+}
+.slogan-top {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+.nav, .sns {
+  display: grid;
+  justify-content: center;
+  align-content: space-around;
+}
+.nav h5, .nav span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  font-weight: 700;
+  align-content: space-around;
+}
+.left-top {
+  background-color: #F9A04E;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.img img {
+  width: 100%;
+}
+.img-left {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+}
+.img-left img {
+  height: 100%;
+}
+.img-right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 5;
+  overflow: hidden;  
+}
+.right-top {
+  background-color: #6FAB9E;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+.left-bottom {
+  background-color: #9CD08E;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.right-bottom {
+  background-color: #F8B5B8;
+  grid-column: 4 / 5;
+  grid-row: 3 / 5;
+}
+.sns {
+  background-color: #F37449;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+.slogan-bottom {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+}
+
+
+.sns img {
+  width: 23px;
+  height: 23px;
+}

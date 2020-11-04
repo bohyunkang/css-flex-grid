@@ -1,0 +1,60 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 420px 200px;
+  grid-template-rows: 100px 400px 350px;
+  gap: 15px;
+}
+.header {
+  background-color: #000000;
+  color: #DDE1D4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 50px 15px 15px;
+}
+.main {
+  position: relative;
+  background-color: #F14011;
+  color: #000000;
+  padding: 0 15px;
+}
+.middle {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+h6 {
+  display: inline-block;
+}
+h6:nth-child(1) {
+  margin-right: 25px;
+}
+h6:nth-child(2) {
+  margin-right: 105px;
+}
+
+h1 {
+  font-size: 170px;
+  font-weight: 700;
+}
+.bad {
+  position: absolute;
+  bottom: 0;
+}
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #DDE1D4;
+  margin-top: 50px;
+}
